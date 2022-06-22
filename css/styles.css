@@ -599,6 +599,7 @@ color: rgba(255, 255, 255, 0.6);
   text-transform: uppercase;
   color: var(--text-color-light);
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .subscribe-field {
@@ -617,13 +618,20 @@ color: rgba(255, 255, 255, 0.6);
 
   font-size: 16px;
   line-height: 1.25;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--text-color-light);
+
+  transition: border-color var(--time-duration) var(--time-function);
 }
 
 .subscribe-input::placeholder {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .subcribe-btn {
@@ -838,10 +846,16 @@ color: rgba(255, 255, 255, 0.6);
   background-color: var(--accent-color);
 }
 
+.modal-check-input:focus + .check-icon,
+.modal-check-input:hover + .check-icon {
+  border: 2px solid var(--accent-color);
+}
+
 .modal-check-title {
   position: relative;
   line-height: 1.71;
   padding-left: 23px;
+  cursor: pointer;
 }
 
 .license-link {
@@ -849,6 +863,11 @@ color: rgba(255, 255, 255, 0.6);
   margin-left: 0.03rem;
   line-height: 1.71;
   color: var(--accent-color);
+}
+
+.license-link:focus,
+.license-link:hover {
+  text-decoration: none;
 }
 
 .modal-btn {
@@ -867,8 +886,8 @@ color: rgba(255, 255, 255, 0.6);
   transition: background-color var(--time-duration) var(--time-function);
 }
 
-.subcribe-btn:hover,
-.subcribe-btn:focus {
+.modal-btn:hover,
+.modal-btn:focus {
   background-color: var(--btn-hover-color);
 }
 
