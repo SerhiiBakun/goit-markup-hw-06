@@ -78,7 +78,7 @@ img {
 .btn:focus {
   color: var(--text-color-light);
   background-color: var(--accent-color);
-  outline: none;
+  outline: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
@@ -133,16 +133,13 @@ img {
   color: var(--accent-color)
 }
 
-.logo:focus {
-  outline: none;
-}
-
 .header .accent {
     color: var(--title-text-color);
 }
 
 
 /* Nav-list */
+
 .nav-list {
   display: flex;
 }
@@ -187,17 +184,12 @@ img {
 .nav-link:hover,
 .nav-link:focus {
   color: var(--accent-color);
-  outline: none;
+  outline: transparent;
 }
 
-/* Ментор сказав, що посилання активної сторінки при ховері і фокусі - не змінюється  */
-/* .nav-link.current:hover,
-.nav-link.current:focus {
-  color: var(--title-text-color);
-  outline: none;
-} */
 
 /* Contacts */
+
 .contact {
   display: flex;
   margin-left: auto;
@@ -224,7 +216,7 @@ img {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
-  outline: none;
+  outline: transparent;
 }
 
 .contact-icon {
@@ -438,7 +430,7 @@ img {
 .team-soc-link:focus {
   background-color: var(--accent-color);
   color: var(--icon-secondary-color);
-  outline: none;
+  outline: transparent;
 }
 
 .team-soc-icon {
@@ -482,7 +474,7 @@ img {
 .clients-link:focus {
   border: 1px solid var(--accent-color);
   color: var(--accent-color);
-  outline: none;
+  outline: transparent;
 }
 
 /* Footer */
@@ -500,10 +492,12 @@ img {
 
 .footer-address {
   margin-right: 70px;
+  min-width: 231px;
 }
 
 .footer .logo {
   margin-bottom: 20px;
+  width: 100%;
 }
 
 .footer .accent {
@@ -530,7 +524,7 @@ line-height: 1.71;
 .contacts-link:hover,
 .contacts-link:focus {
   color: var(--accent-color);
-  outline: none;
+  outline: transparent;
 }
 
 .contacts-link {
@@ -579,7 +573,7 @@ color: rgba(255, 255, 255, 0.6);
 .joinus-link:hover,
 .joinus-link:focus {
   background-color: var(--accent-color);
-  outline: none;
+  outline: transparent;
 }
 
 .joinus-icon {
@@ -630,7 +624,7 @@ color: rgba(255, 255, 255, 0.6);
 }
 
 .subscribe-input:focus {
-  outline: none;
+  outline: transparent;
   border-color: var(--accent-color);
 }
 
@@ -774,7 +768,7 @@ color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border var(--time-duration) var(--time-function);
-  outline: none;
+  outline: transparent;
 }
 
 .modal-input:focus {
@@ -804,7 +798,7 @@ color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border var(--time-duration) var(--time-function);
-  outline: none;
+  outline: transparent;
 }
 
 .modal-comment {
@@ -924,7 +918,7 @@ color: rgba(255, 255, 255, 0.6);
 .work-link:hover,
 .work-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  outline: none;
+  outline: transparent;
 }
 
 .work-item {
