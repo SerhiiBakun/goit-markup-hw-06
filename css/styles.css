@@ -831,12 +831,15 @@ color: rgba(255, 255, 255, 0.6);
   border-radius: 2px;
   border: 2px solid var(--title-text-color);
   background-color: transparent;
-
+  fill: transparent;
+  
   transition: border var(--time-duration) var(--time-function), background-color var(--time-duration) var(--time-function);
 }
 
-.modal-check-input:checked + .check-icon {
-  border: 2px solid transparent;
+.modal-check-input:checked + .check-icon,
+.modal-check-input:checked:focus + .check-icon,
+.modal-check-input:checked:hover + .check-icon {
+  border: none;
   background-color: var(--accent-color);
 }
 
