@@ -854,7 +854,6 @@ color: rgba(255, 255, 255, 0.6);
 
 .license-link {
   display: inline-block;
-  margin-left: 0.03rem;
   line-height: 1.71;
   color: var(--accent-color);
 }
